@@ -1,0 +1,25 @@
+ex 1:
+For a growth factor of r = 0.9 (which is less than 1), the population cannot 
+sustain itself. The mortality/decay rate exceeds the reproduction rate. 
+Regardless of the initial population size (as long as it is between 0 and 1), 
+the population continuously decreases and eventually faces extinction (x converges to 0).
+
+ex 2:
+The simulation (bifurcation diagram) shows that the population growth becomes 
+chaotic at approximately r = 3.56995. Before this point, the population settles 
+into stable cycles (period doubling). Beyond this point, the population size 
+fluctuates wildly and never settles into a repeating pattern.
+
+ex 5:
+0.1: The population exhibits classic chaotic behavior, bouncing unpredictably between bounds but remaining alive.
+0.5: In step 1, x becomes 1.0. In step 2, x becomes 0. The population dies instantly after one generation.
+1.0: In step 1, x becomes 0. The population dies instantly.
+2.0: x exceeds the logical bounds of the system. In step 1, it becomes -8. It then diverges rapidly to negative infinity.
+
+ex 7:
+Does the population survive after 15 steps?
+No, it does not meaningfully survive. Because state 'b' now severely punishes 
+growth (r=0.5), and the sequence inevitably hits state 'b', the population drops 
+sharply. Even when states 'a' or 'c' trigger, the population size has become so 
+small that it cannot recover rapidly enough before another 'b' state crashes it 
+further. After 15 steps, x effectively approaches 0.
